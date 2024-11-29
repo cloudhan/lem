@@ -1,6 +1,7 @@
-;; workaround COMPILE-FILE-ERROR from micros
+;; workaround COMPILE-FILE-ERROR from micros and swank
 (setf uiop:*compile-file-failure-behaviour* :warn)
 (asdf:load-system :micros)
+(asdf:load-system :swank)
 (setf uiop:*compile-file-failure-behaviour* :error)
 
 (asdf:load-system :cl-fad)
