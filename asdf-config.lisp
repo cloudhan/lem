@@ -1,3 +1,8 @@
+;; workaround COMPILE-FILE-ERROR from micros
+(setf uiop:*compile-file-failure-behaviour* :warn)
+(asdf:load-system :micros)
+(setf uiop:*compile-file-failure-behaviour* :error)
+
 (asdf:load-system :cl-fad)
 
 (defvar curr-dir)
