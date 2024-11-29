@@ -1,4 +1,4 @@
-(ql:quickload :lem-sdl2)
+(asdf:load-system :lem-sdl2)
 
 (lem:init-at-build-time)
 

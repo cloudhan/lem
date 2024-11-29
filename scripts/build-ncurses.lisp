@@ -1,4 +1,4 @@
-(ql:quickload :lem-ncurses)
+(asdf:load-system :lem-ncurses)
 
 (lem:init-at-build-time)
 

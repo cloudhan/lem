@@ -13,7 +13,7 @@
 (defstruct (error-datum (:include datum)))
 
 (test test
-  (ql:quickload :lem-fake-interface :silent t)
+  (asdf:load-system :lem-fake-interface :silent t)
   (lem)
   (let ((event-queue (lem-core::make-event-queue)))
     (send-event (lambda ()

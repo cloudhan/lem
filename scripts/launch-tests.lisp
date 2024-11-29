@@ -1,4 +1,4 @@
-(ql:quickload :lem-tests)
+(asdf:load-system :lem-tests)
 
 (rove:run :lem-tests)
 

@@ -1,4 +1,4 @@
-(ql:quickload :lem-server)
+(asdf:load-system :lem-server)
 
 (lem:init-at-build-time)
 
